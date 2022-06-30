@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+body{
+	overflow-x: hidden;
+	background-image: url(../img/fondo2.jpg);
+	opacity: 1.0;
+	background-attachment: fixed;
+}
+
+h1{
+	color: #4F5B67;
+	font-size: 2.7rem;
+}
+h2{
+	font-size: 2.5rem;
+	font-style: italic;
+}
+h3{
+	color: #4F5B67;
+	font-size: 2.2rem;
+	font-style: italic;
+}
+h4{
+	color: #4F5B67;	
+	font-size: 2rem;
+}
+
+p{
+	color: #50627C;
+	font-size: 1.9rem;
+}
+
+.text-center{
+	text-align: center;
+}
+.text-center--l{
+	font-size: 4rem;
+	text-align: center;
+	color: #4F5B67;
+}
+
+.text-left{
+	text-align: left;
+	color: #D9DDE4;
+	margin: 10px;
+	padding: 50px;
+
+}
+
+.text-right{
+	text-align: right;
+}
+
+
+.nav{
+	grid-area: nav;
+	background-color: rgba(75, 75, 75, 0.75);
+	position: sticky;
+	top: 0px;
+	padding: 10px 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.header{
+	grid-area: header;
+	width: 100%;
+}
+
+.nosotros{
+	grid-area: nosotros;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(75, 75, 75, 0.25);
+	width: 60%;
+	height: auto;
+	margin: 20px auto;
+	padding: 15px;
+	border: inset 2px #9ABBCE;
+}
+
+.imagen{
+	grid-area: imagen;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: auto;
+	margin: 20px auto;
+	padding: 10px 0px;
+}
+
+.pie{
+	grid-area: pie;
+	background-color: rgba(75, 75, 75, 0.75);
+	font-size: 1.5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+#contenedor-grid{
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(5, 1fr);
+	grid-template-areas: "nav" "header" "nosotros" "imagen" "pie";	
+}
+
+.nav img{
+		width: 100px;
+		margin: 25px;
+	}
+
+		.nav ul{
+			display: flex;
+		}
+
+			.nav ul li{
+				list-style: none;
+				margin: 20px;
+			}
+
+				.nav ul li a{
+					color: #D9DDE4;
+					text-decoration: none;
+					font-size: 1.8rem;
+				}
+
+
+/* nav*/
+
+
+.pie ul li{
+		list-style: none;
+	}
+		.pie ul li a img{
+			width: 60%;
+			margin: 10px 0;
+		}
+
+			.pie div ul li a{
+				text-decoration: none;
+				font-size: 1.5rem;
+				color: #ffffff;
+				margin: 20px;
+			}
+
+/*footer*/
+
+
+
+/* ======================= media queries index======================= */
+@media (min-width: 768px){
+	#contenedor-grid{
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto;
+		grid-template-areas:
+		"nav nav"
+		"header header"
+		"nosotros nosotros"
+		"imagen imagen"
+		"pie pie";
+	}
+
+	.nav{
+		flex-direction:	row;
+		justify-content: space-between;
+	}
+
+	.nav img{
+		margin-bottom: 0;
+	}
+	
+
+}
+
+@media (min-width: 1024px){
+	#contenedor-grid{
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto;
+		grid-template-areas:
+		"nav nav"
+		"header header"
+		"nosotros imagen"
+		"pie pie";
+	}
+
+	.nav{
+		flex-direction:	row;
+		justify-content: space-between;
+	}
+
+	.nav img{
+		margin-bottom: 0;
+	}
+	
+
+}
+
+/* ======================= finaliza media queries index======================= */
+
+
+/* mobile first equipo*/
+
+#contenedor-equipo{
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: 
+	"nav" "header" "equipo" "pie";	
+}
+
+.nav{
+	flex-direction: column;
+	justify-content: center;
+}
+
+.encabezado{
+	margin: 30px auto;
+}
+.equipo{
+	grid-area: equipo;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.team{
+	grid-area: team;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+figure{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 90%;
+	margin: 2rem;
+	padding-top: 3rem;
+	background-color:  rgba(75, 75, 75, 0.25);
+}
+
+figure img{
+	width: 70%;
+}
+
+figure p{
+	text-align: center;
+	font-size: 1.8rem;
+	margin: 2rem;
+}
+
+figcaption{
+	color: #4F5B67;
+	font-size: 2.2rem;
+	font-style: italic;
+}
+
+/* ======================= media queries equipo======================= */
+@media (min-width: 1024px){
+	#contenedor-equipo{
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto;
+		grid-template-areas:
+		"nav nav"
+		"header header"
+		"team team"
+		"equipo equipo"
+		"pie pie";
+	}
+
+	.nav{
+		flex-direction:	row;
+		justify-content: space-between;
+	}
+
+		.nav img{
+		margin-bottom: 0;
+		}
+
+	.equipo{
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.team{
+		grid-area: team;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	figure{
+		width: 40%;
+		margin: 2rem;
+		padding-top: 3rem;
+		background-color:  rgba(75, 75, 75, 0.25);
+	}
+
+	figure img{
+		width: 50%;
+	}
+
+}
+
+
+@media (min-width: 1200px){
+	#contenedor-equipo{
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: auto;
+		grid-template-areas:
+		"nav nav nav"
+		"header header header"
+		"team team team"
+		"equipo equipo equipo"
+		"pie pie pie";
+	}
+
+	.equipo{
+		justify-content: space-evenly;
+	}
+
+	.team{
+		justify-content: space-evenly;
+	}
+
+	figure{
+		width: 25%;
+		margin: 2rem;
+		padding-top: 3rem;
+		background-color:  rgba(75, 75, 75, 0.25);
+	}
+
+	figure img{
+		width: 50%;
+	}	
+}
+
+/* ======================= finaliza media queries equipo======================= */
+

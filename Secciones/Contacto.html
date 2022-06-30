@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HeroDog - Traslada a tu mascota</title>
+	<link rel="shortcut icon" href="../img/favicon1.png">
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<header class="header">
+	<nav class="nav">
+		<a href="../index.html">
+			<img src="../img/logo.png" alt="logo de HeroDog traslada tu mascota">
+		</a>
+		<ul class="text-right">
+			<li>
+				<a href="Servicios.html">Servicios</a>
+			</li>
+			<li>
+				<a href="Equipo.html">Equipo</a>
+			</li>
+			<li>
+				<a href="Preguntas.html">Preguntas frecuentes</a>
+			</li>
+			<li>
+				<a href="Contacto.html">Contacto</a>
+			</li>
+	</nav>
+	</header>
+	<main>
+		<section>
+			<h1 class="text-center--l">Formulario de Contacto</h1>
+		<form action="envio.php" class="formulario">
+				<fieldset class="contacto">
+					<legend>Info personal</legend>
+					<label for="nombre">Nombre:</label>
+					<input type="text" id="nombre" placeholder="Daniela Perez">
+					<label for="email">Email:</label>
+					<input type="email" id="email" placeholder="mail@mail.com">
+					<label for="telefono">Telefono:</label>
+					<input type="number" id="telefono" placeholder="0111236547890">
+				</fieldset>
+				<fieldset class="contacto">
+					<legend>Info Viaje</legend>
+					<label for="origen">Pais de origen:</label>
+					<select name="" id="origen">
+						<option value="Argentina">Argentina</option>
+						<option value="Espana">España</option>
+						<option value="Estados Unidos">Estados Unidos</option>
+					</select>
+					<label for="destino">Pais de destino</label>
+					<select name="" id="origen">
+						<option value="Argentina">Argentina</option>
+						<option value="Espana">España</option>
+						<option value="Estados Unidos">Estados Unidos</option>
+					</select>
+				</fieldset>
+				<fieldset>
+					<legend>Info Mascota</legend>
+					<label for="raza">Raza:</label>
+					<input type="text" id="raza">
+					<label for="edad">Edad:</label>
+					<input type="number" id="edad">
+					<label for="peso">Peso:</label>
+					<input type="number" id="peso">
+				</fieldset>
+				<fieldset class="contacto">
+					<legend>Contacto</legend>
+					<label for="telefono">Contacto a mi telefono</label>
+					<input type="radio"	id="telefono"	value="telefono"	name="contacto">
+					<br>
+					<label for="email">Contacto a mi email</label>
+					<input type="radio"	id="email"	value="email" name="contacto">
+				</fieldset>
+				<fieldset class="comentarios">
+					<legend>Comentarios</legend>
+					<label for="mensaje"></label>
+					<textarea name="" id="mensaje" cols="40" rows="8"></textarea>
+					<button>Borrar</button>
+					<button>Enviar</button>
+				</fieldset>
+				<!-- ends form-->
+			</form>
+		</section>
+		<!-- ends form-->
+		<section class="mapa">
+			<h2 class="text-center--l">Nuestra ubicación</h2>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.369082034477!2d-58.44433288501367!3d-34.594827480461745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5f562fa00d5%3A0x4f8590f5dcec829d!2sThames%20579%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1653715156039!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</section>
+		<!-- ends maps-->
+	</main>
+	<footer class="pie">
+		<div>
+			<ul>
+				<li>
+					<a href="">Direccion: Thames 579, Buenos Aires</a>
+				</li>
+				<li>
+					<a href="">whatsapp: +54 11 1234 5678</a>
+				</li>
+			</ul>
+		</div>
+			<ul class="pie">
+				<li>
+					<a href="https:www.facebook.com" target="_blank">
+							<img src="../img/facebook1.png" alt="">
+					</a>
+				</li>
+				<li>	
+					<a href="https:www.twitter.com" target="_blank">
+						<img src="../img/twitter.png" alt="">	
+					</a>
+				</li>
+				<li>
+					<a href="https:www.instagram.com" target="_blank">
+						<img src="../img/instagram.png" alt="seguinos en instagram">
+					</a>
+				</li>
+			</ul>
+	</footer>
+</body>
+</html>
