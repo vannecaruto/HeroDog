@@ -23,7 +23,7 @@ h1{
 }
 h2{
 	font-size: 2.5rem;
-	font-style: italic;
+	color: #4F5B67;
 }
 h3{
 	color: #4F5B67;
@@ -143,6 +143,17 @@ p{
 					color: #D9DDE4;
 					text-decoration: none;
 					font-size: 1.8rem;
+						background-image: linear-gradient(currentColor, currentColor);
+						background-position: 0% 100%;
+						background-repeat: no-repeat;
+						background-size: 0% 2%;
+						transition: background-size .3s;
+				}
+
+				.nav ul li a:hover{
+					color: whitesmoke;
+					font-weight: 600;
+					background-size: 100% 2px;
 				}
 
 
@@ -165,6 +176,117 @@ p{
 			}
 
 /*footer*/
+/*preguntas*/
+
+
+
+button{
+	width: 25%;
+	margin-left: 2.5%;
+	height: 2rem;
+	color: rgb(75, 75, 75);
+	align-items: center;
+	background: linear-gradient(to top, silver, lightsteelblue);
+	color: black;
+	border: none;
+	border-radius: 3px;
+}
+
+button:hover{
+	background: linear-gradient(to top, lightsteelblue, silver);
+	color: white;
+	transition: all 1s;
+}
+
+.contacto{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+
+
+.contacto_mascota{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.formulario{
+	background-color: rgba(75, 75, 75, 0.25);
+	font-size: 1.3rem;
+	color: #4F5B67;
+	width: 65%;
+	height: auto;
+	margin: auto;
+	padding: 30px 10px;
+	border: inset 2px #50627C;
+	display: flex;
+
+}
+
+/*contacto*/
+
+.mapa{
+	text-align: center;
+	margin: 50px auto;
+}
+
+/*mapa*/
+
+.tabla{
+	width: 90%;
+	height: auto;
+	margin: auto;
+	padding: 30px 10px;
+	border: none;
+}
+
+table tr th{
+	background-color: #778899;
+	color: #3C4249;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2rem;
+	padding: 10px;
+}
+
+table tr td{
+	background-color: rgba(119, 136, 153, 0.2);
+	color: #50627C;
+	font-size: 1.5rem;
+	padding: 20px;
+}
+
+.recorridos{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.recorridos_img{
+	width: 45%;
+	height: auto;
+	margin: 1rem 3rem;
+	padding: 1rem;
+}
+
+.recorridos_articulo{
+	color: #4F5B67;
+	font-size: 1.8rem;
+	width: 45%;
+	height: auto;
+	margin: 30px 0px 50px 20px;
+	padding: 30px 10px;
+
+}
+
+section div ul li a{
+	text-decoration: none;
+	color: #4F5B67;
+	font-size: 1.8rem;
+}
+
 
 
 
@@ -366,3 +488,25 @@ figcaption{
 
 /* ======================= finaliza media queries equipo======================= */
 
+/* ======================= inicia animaciones ======================= */
+
+@keyframes headerAnimation{
+	0%{background-image: url(../img/header0.jpg);}
+	35%{background-image: url(../img/header1.jpg);}
+	70%{background-image: url(../img/header2.jpg);}
+	100%{background-image: url(../img/header3.jpg);}
+}
+
+/* buscar imagenes para el header*/
+
+.transicion{
+	height: 80vh;
+	animation-name: headerAnimation;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	background-size: cover;
+}
+
+.scale:hover{
+	transform: scaleX(1.1);
+}
