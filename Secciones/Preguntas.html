@@ -1,34 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>HeroDog - Traslada a tu mascota</title>
-	<link rel="shortcut icon" href="../img/favicon1.png">
-	<link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
-	<header class="header">
-	<nav class="nav">
-		<a href="../index.html">
-			<img src="../img/logo.png" alt="logo de HeroDog traslada tu mascota">
-		</a>
-		<ul class="text-right">
-			<li>
-				<a href="Servicios.html">Servicios</a>
-			</li>
-			<li>
-				<a href="Equipo.html">Equipo</a>
-			</li>
-			<li>
-				<a href="Preguntas.html">Preguntas frecuentes</a>
-			</li>
-			<li>
-				<a href="Contacto.html">Contacto</a>
-			</li>
-		</ul>
-	</nav>
-	</header>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../img/favicon1.png">
+    <script src="https://kit.fontawesome.com/4a5cefd3b3.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- mi CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>HeroDog - Traslada a tu mascota</title>
+  </head>
+  <body>
+
+  <!-- start nav-->
+<nav id="nav" class="navbar navbar-expand-lg navbar-light bg-gray sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="../index.html">
+      <img src="../img/logo.png" class="ms-4" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="Servicios.html">Servicios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Equipo.html">Equipo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Preguntas.html">Preguntas frecuentes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contacto.html">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <!-- ends nav-->
 	<main>
 		<h1 class="preguntas text-center--l">Preguntas frecuentes</h1>
 		<section class="preguntas">
@@ -57,34 +73,30 @@
 			</article>
 			<!-- ends questions-->
 		</section>
-	<footer class="pie">
-		<div>
-			<ul>
-				<li>
-					<a href="">Direccion: Thames 579, Buenos Aires</a>
-				</li>
-				<li>
-					<a href="">whatsapp: +54 11 1234 5678</a>
-				</li>
-			</ul>
-		</div>
-			<ul class="pie">
-				<li>
-					<a href="https:www.facebook.com" target="_blank">
-							<img src="../img/facebook1.png" alt="">
-					</a>
-				</li>
-				<li>	
-					<a href="https:www.twitter.com" target="_blank">
-						<img src="../img/twitter.png" alt="">	
-					</a>
-				</li>
-				<li>
-					<a href="https:www.instagram.com" target="_blank">
-						<img src="../img/instagram.png" alt="seguinos en instagram">
-					</a>
-				</li>
-			</ul>
-	</footer>
+	<footer class="bg-gray text-center text-white">
+  <!-- Grid container -->
+		    <div class="container p-4 pb-0">
+		      <!-- Section: Social media -->
+		      <section class="mb-4">
+		        <!-- Facebook -->
+		       <a class="btn btn-floating m-1 icons" href="#!" role="button"
+		        ><i class="fab fa-facebook-f"></i
+		      ></a>
+		        <!-- Twitter -->
+		        <a class="btn btn-floating m-1 icons" href="#!" role="button"
+		        ><i class="fab fa-twitter"></i
+		      ></a>
+		        <!-- Instagram -->
+		        <a class="btn btn-floating m-1 icons" href="#!" role="button"
+		        ><i class="fab fa-instagram"></i
+		      ></a>
+		      </section>
+		      <!-- Section: Social media -->
+		    </div>
+		    <!-- Grid container -->
+		    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+		      <h4>Direccion: Thames 579, Buenos Aires</h4>
+		    </div>
+		</footer>
 </body>
 </html>
